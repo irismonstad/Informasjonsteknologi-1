@@ -1,0 +1,62 @@
+body {
+    background-color: pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    color: maroon;
+} 
+
+li {
+    padding: 3px;
+}
+aside {
+    width:30%;
+    padding: 15px;
+    margin: 1rem;
+    float: right;
+    background-color: antiquewhite;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin: auto;
+}
+thead {
+    background-color: lightcoral;
+}
+
+th,
+td {
+  border: 1px solid rgb(42, 37, 37);
+  padding: 10px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+.boks {
+    height: 500px;
+    width: 500px;
+    padding: 1px;
+    margin: 1em;
+}
+
+
+#banner h1{
+    width:100%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bitcount Grid Double', sans-serif;
+    font-weight: 400;
+    margin: 1rem;
+}
+
