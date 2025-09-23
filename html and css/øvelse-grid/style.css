@@ -17,7 +17,7 @@ html, body {
 #main > div {
     height:70px;
     background-color: palevioletred;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 
 #main :nth-child(odd) {background-color: rgb(102, 140, 127);}
