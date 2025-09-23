@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main {
+    display: grid;
+    background-color: antiquewhite;
+    /* width:700px; */
+    /* height:700px; */
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));;
+    grid-template-rows: repeat(8,1fr);
+}
+
+#main > div {
+    height:70px;
+    background-color: palevioletred;
+    border:1px solid black;
+}
+
+#main :nth-child(odd) {background-color: rgb(102, 140, 127);}
