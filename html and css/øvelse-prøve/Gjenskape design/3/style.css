@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main {
+    background-color: antiquewhite;
+    padding:1em;
+    display:grid;
+    gap:3em;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "a b c d d" "a e e f g" "h e e i g";
+    height:95%;
+}
+
+#main > div {
+    background-color: lightpink;
+    border:1px solid black;
+    border-radius: 5%;
+}
+
+.a {grid-area:a;}
+.b {grid-area:b;}
+.c {grid-area:c;}
+.d {grid-area:d;}
+.e {grid-area:e;}
+.f {grid-area:f;}
+.g {grid-area:g;}
+.h {grid-area:h;}
+.i {grid-area:i;}

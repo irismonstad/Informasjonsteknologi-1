@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main {
+    background-color: lightgrey;
+    padding:5px;
+    gap:1em;
+    display:grid;
+    grid-template-rows:1fr 3fr 1fr;
+    grid-template-areas:"t" "m" "b";
+    height:90%;
+}
+
+#main > div {
+    background-color: lightpink;
+    border:1px solid black;
+}
+
+.top {grid-area:t;}
+.middle {grid-area:m;}
+.bottom {grid-area:b;}

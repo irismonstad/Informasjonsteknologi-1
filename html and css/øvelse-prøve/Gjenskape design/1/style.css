@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main {
+    /* width:100%; */
+    height:90%;
+    padding:5px;
+    display:grid;
+    background-color: lightpink;
+    gap:5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "l r"
+}
+
+#main > div {
+    background-color: lightgrey;
+    border:1px solid black;
+}
+
+.left {grid-area: l;}
+.right {grid-area: r;}
