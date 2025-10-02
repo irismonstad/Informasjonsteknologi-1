@@ -6,13 +6,14 @@ html, body {
 
 #main {
     /* width:100%; */
-    height:90%;
-    padding:5px;
+    height:100%;
+    box-sizing: border-box;
+    padding:10px;
     display:grid;
     background-color: lightpink;
-    gap:5px;
+    gap:10px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "l r"
+    grid-template-areas: "l r";
 }
 
 #main > div {
@@ -22,3 +23,14 @@ html, body {
 
 .left {grid-area: l;}
 .right {grid-area: r;}
+
+@media screen and (max-width: 600px) {
+    #main {
+        display: grid;
+        padding:10px;
+        gap:10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "l" "r";
+        height:100%;
+    }
+}
