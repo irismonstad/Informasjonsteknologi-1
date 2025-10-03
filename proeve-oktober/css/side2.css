@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    display:grid;
+}
+
+nav {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(36, 36, 37);
+    /* height:3em; */
+    padding:2em;
+}
+
+nav a {
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "s c" "g g";
+    margin:1em;
+    gap:1em;
+}
+
+.spiderman {
+    background-color: lightcoral;
+    height:fit-content;
+    padding:1em;
+}
+
+.comic {
+    display:flex;
+    flex-direction: column;
+    background-color: lightgray;
+    align-items: center;
+    padding:1em;
+    gap:1em;
+    margin:0;
+}
+
+.comic > img {
+    border-radius: 2%;
+    margin:auto;
+}
+
+.generelt {
+    display:flex;
+    flex-grow:1;
+    gap:1em;
+    padding:1em;
+    justify-content: space-evenly;
+    
+
+}
+.generelt > article {
+    /* border:1px solid red; */
+    background-color: lightgray;
+    border-radius: 2%;
+    padding:1em;
+}
+
+.spiderman {grid-area:s;}
+.comic {grid-area:c;}
+.generelt {grid-area:g;}
+#om {grid-area:o;}
+#forfatter {grid-area:f;}
+#illustratør {grid-area:i;}
+
+@media screen and (max-width:1000px) {
+    main {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "s" "c" "g"
+    }
+    .generelt {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "o f" "i i";
+    }
+}
+
+@media screen and (max-width:500px) {
+    main {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "s" "c" "g"
+    }
+    .generelt {
+        display:grid;
+        grid-template-areas: "o" "f" "i"
+    }
+    .generelt > article {
+        width:100%;
+        /* Får ikke artiklene til å ta opp hele bredden */
+    }
+}
