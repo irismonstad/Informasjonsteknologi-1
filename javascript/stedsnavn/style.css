@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(118, 125, 154);
+    align-content: center;
+}
+
+main {
+    background-color: rgb(179, 179, 179);
+    display:grid;
+    justify-content: center;
+    text-align: center;
+}
+
+#brukerinputfelt {
+    display:flex;
+    justify-content: space-evenly;
+    gap:0.5rem;
+}
+
+#brukerinputfelt > * {
+    background-color: white;
+    border:1px solid black; 
+}
+
+@media screen and (hover:hover) {
+    #beregn:hover {
+        background-color: rgb(137, 195, 211);
+    }
+}
