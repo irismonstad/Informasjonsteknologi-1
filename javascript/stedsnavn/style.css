@@ -25,6 +25,7 @@ main {
 #brukerinputfelt > * {
     background-color: white;
     border:1px solid black; 
+    padding:0.1rem;
 }
 
 @media screen and (hover:hover) {

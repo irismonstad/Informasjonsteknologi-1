@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stedsnavn</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +11,12 @@
     <main>
         <h1>Stedsnavn, med brukerinput</h1>
         <div id="brukerinputfelt">
-            <input id="navn1"></input>
-            <input id="navn2"></input>
+            <!-- placeholder angir innholdet i feltet før man skriver noe, maxlength angir maks antall karakterer som kan skrives inn -->
+            <input placeholder = "Skriv et stedsnavn..." maxlength="21" id="navn1"></input>
+            <input placeholder = "Skriv et stedsnavn..." maxlength="21" id="navn2"></input>
             <button id="beregnknapp">Differanse i tegn</button>
         </div>
+        <!-- Innhold endres med javascript -->
         <p id="utskrift"></p>
     </main>
     
