@@ -15,8 +15,8 @@ function capitalise(word) {
 }
 
 // Lar brukeren beregne differansen ved å trykke på "beregn"-knappen
-const beregnknapp = document.getElementById("beregnknapp");
-beregnknapp.addEventListener("click", beregn);
+const BEREGNKNAPP = document.getElementById("beregnknapp");
+BEREGNKNAPP.addEventListener("click", beregn);
 
 // Lar bruker sjekke differanse ved å bruke enter-tasten
 window.addEventListener("keypress", function(event) {
@@ -28,7 +28,7 @@ window.addEventListener("keypress", function(event) {
 
 
 function beregn() {
-    // Henter nåværende verdier fra input-felt
+    // Henter nåværende verdier fra input-felt 
     let navn1 = getNavn1()
     let navn2 = getNavn2()
 
