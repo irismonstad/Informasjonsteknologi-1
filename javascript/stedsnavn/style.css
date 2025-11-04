@@ -4,10 +4,10 @@ html, body {
     height: 100%;
 }
 
-body {
+/* body {
     background-color: rgb(118, 125, 154);
     align-content: center;
-}
+} */
 
 main {
     background-color: rgb(179, 179, 179);
