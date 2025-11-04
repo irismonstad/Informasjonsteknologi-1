@@ -8,13 +8,12 @@ body {
     background-color: rgb(221, 221, 216);
     display:grid;
     align-content: center;
-    /* padding:1rem; */
 }
 
 #bilde {
     height: 500px;
     width:500px;
-    background-color: lightpink;
+    background-color: lightgrey;
 }
 
 main {
@@ -26,6 +25,5 @@ main {
 
 #knapper {
     display:flex;
-    justify-content: center;
     justify-content: space-around;
 }

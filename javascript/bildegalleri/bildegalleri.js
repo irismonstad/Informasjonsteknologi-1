@@ -1,32 +1,43 @@
+// alle bildene er hentet fra pixabay.com
 let bilder = ["bilder/chinese-lanterns-7591296_1280.jpg", "bilder/lantern-1600769_1280.jpg", "bilder/lantern-6894507_1280.jpg"]
+
 let framknapp = document.getElementById("fram")
 let bakknapp = document.getElementById("tilbake")
 
-framknapp.addEventListener("click", () => changeImage("frem"));
-bakknapp.addEventListener("click", () => changeImage("bak"));
+// representer hvilket bilde i arrayet (bilder) man er på
+let index = 0
 
-let tall = 0
+// bytter bilde når man trykker på frem/bak knapp
+// bruker arrow-funksjon for å kunne kalle funksjonen byttBilde med parametre (retning)
+framknapp.addEventListener("click", () => byttBilde("fram"));
+bakknapp.addEventListener("click", () => byttBilde("bak"));
 
-document.getElementById("bilde").src = bilder[tall]
+// setter bilde før brukeren har trykket på en knapp
+document.getElementById("bilde").src = bilder[index]
 
-
-
-function changeImage(retning){
-    if (retning === "frem"){
-        if (tall === bilder.length - 1){
-            tall = 0
+function byttBilde(retning){
+    // retning frem: 
+    // hvis indeks er siste bildet (lengde - 1), gjør indeks til 0
+    // ellers: legg til 1 på indeks
+    if (retning === "fram"){
+        if (index === bilder.length - 1){
+            index = 0
         }
         else {
-            tall += 1
+            index += 1
         }
     }
+    // retning bak:
+    // hvis indeks er første bildet (0), gjør indeks til siste bildet (lengde - 1)
+    // ellers: trekk fra 1 på indeks
     else {
-        if (tall === 0){
-            tall = bilder.length - 1
+        if (index === 0){
+            index = bilder.length - 1
         }
         else {
-            tall -= 1
+            index -= 1
         }
     }
-    document.getElementById("bilde").src = bilder[tall]
+    // oppdater bilde med ny indeks
+    document.getElementById("bilde").src = bilder[index]
 }
