@@ -1,0 +1,22 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    display:grid;
+    gap:0;
+    place-items: center;
+    background-color: lightpink;
+}
+#content {
+    text-align: center;
+    display:grid;
+    justify-content:center;
+    padding:20px;
+    /* border:1px solid black; */
+}
+#kattebilde > * {
+    max-height: 550px;
+}
