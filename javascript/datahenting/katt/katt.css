@@ -18,5 +18,5 @@ body {
     /* border:1px solid black; */
 }
 #kattebilde > * {
-    max-height: 550px;
+    height: 550px;
 }
