@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    display:grid;
+    background-color: lightblue;
+    place-items:center;
+}
+body > * {
+    text-align:center;
+    padding:3em;
+    /* border:1px solid black; */
+}

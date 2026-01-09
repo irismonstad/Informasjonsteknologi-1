@@ -14,4 +14,4 @@ function getName(amount) {
     }
 }
 
-getName(5);
+getName(2);
