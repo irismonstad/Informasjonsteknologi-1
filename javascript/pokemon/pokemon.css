@@ -1,0 +1,40 @@
+html, body {
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+body {
+    display:grid;
+    grid-template-areas: "a b b";
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#input {
+    grid-area:a;
+    background-color: lightpink;
+    display:grid;
+    justify-content:center;
+    align-items: center;
+}
+
+#input > * {
+    display:grid;
+    /* gap:1em; */
+}
+
+#radio_ability {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:.5em;
+    margin-bottom:1em;
+}
+
+#results {
+    grid-area:b;
+    background-color: lightblue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

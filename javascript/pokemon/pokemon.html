@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pokemon.css">
+    <script src="pokemon.js" defer></script>
+</head>
+<body>
+    <div id="input">
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <p>Abilities?</p>
+            <div id="radio_ability">
+                <input type="radio" id="ability" name="abilities" value="yes">
+                <label for="ability_yes">Yes</label>
+                <input type="radio" id="ability" name="abilities" value="no">
+                <label for="ability_no">No</label>
+            </div>
+            <input type="submit" value="submit">
+
+        </form>
+    </div>
+    <div id="results">
+        <div id="output"></div>
+    </div>
+</body>
+</html>
