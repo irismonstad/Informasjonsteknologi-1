@@ -1,12 +1,12 @@
 function sendToFunction(event) {
     event.preventDefault();
+    document.getElementById("output").innerHTML = "";
     const name = document.getElementById("name").value;
     const abilities = document.getElementById("ability").value;
     getPokemon(name, abilities)
 }
 
 async function getPokemon(name, abilities) {
-    document.getElementById("output").innerHTML = "";
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}/`);
     const data = await response.json();
 
