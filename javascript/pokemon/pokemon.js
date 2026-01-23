@@ -21,7 +21,9 @@ async function getPokemon(name, abilities) {
             abilityoutput.innerHTML += `<li>${ability}</li>`;
         }
         document.getElementById("output").appendChild(abilityoutput);
-
+    }
+    else {
+        console.log("no!")
     }
 
 }
