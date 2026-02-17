@@ -1,0 +1,29 @@
+body, html {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+body {
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6em;
+    background-color: bisque;
+    width:400px;
+    height:400px;
+    border-radius: 50%;
+}
+
+.move {
+    width:4em;
+    height:4em;
+    background-color: pink;
+    border-radius: 50%;
+}
+
